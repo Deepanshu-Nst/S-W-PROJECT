@@ -218,12 +218,13 @@ ul {
 /* Project Highlights Section */
 .project-highlights {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   padding: 50px 20px;
   background-color: #111;
   color: #fff;
   gap: 40px;
+
 }
 
 .highlights-title {
@@ -233,27 +234,31 @@ ul {
 .highlights-content {
   flex: 2;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-end;
   gap: 20px;
+  padding-right: 50px;
 }
 
 .highlight {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
+  text-align: left;
 }
 
 .highlight h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007bff;
+  color: white;
   margin-bottom: 0;
 }
 
 .highlight p {
   font-size: 1.2rem;
-  color: #ccc;
+  color: #FFFFFF99;
+  ;
   margin: 0;
 }
 
@@ -263,7 +268,6 @@ ul {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 50px 20px;
-  background-color: #222;
   color: #fff;
   gap: 40px;
 }
@@ -280,17 +284,18 @@ ul {
 }
 
 .metric {
-  background-color: #333;
   padding: 20px;
   border-radius: 8px;
   text-align: left;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  border-top: 1px solid rgba(255, 255, 255,0.16);
 }
+
 
 .metric h3 {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #007bff;
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -351,20 +356,27 @@ ul {
   animation: fadeIn 1.5s ease;
 }
 
+.review-holder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .review-card {
   display: inline-block;
-  background-color: #222;
   padding: 20px;
   margin: 10px;
   width: 250px;
+  height: 200px;
   text-align: center;
   border-radius: 8px;
+  border: 1px solid #FFFFFF;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .review-card:hover {
   transform: scale(1.05);
-  background-color: #333;
 }
 
 .review-card img {
@@ -383,9 +395,11 @@ ul {
 /* Contact Section */
 .contact {
   padding: 50px 20px;
-  background-color: #111;
   color: #fff;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact-header h2 {
@@ -402,7 +416,6 @@ ul {
 
 .contact-form {
   max-width: 600px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -420,12 +433,34 @@ ul {
   color: #ccc;
 }
 
+.two{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.two input[type="text"]{
+  width: 95%;
+}
+
+.para{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.para div{
+  width: 40rem;
+}
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: #222;
   color: #fff;
   font-size: 1rem;
@@ -435,7 +470,6 @@ ul {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
@@ -444,12 +478,13 @@ ul {
   height: 150px;
 }
 
-.contact-form button {
-  padding: 15px;
-  background-color: #007bff;
-  color: #fff;
+.contact-form button{
+  padding: 10px;
+  background-color: white;
+  color: black;
   border: none;
-  border-radius: 5px;
+  width: 100px;
+  border-radius: 25px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -490,10 +525,10 @@ ul {
 
 /* Footer */
 .footer {
-  background-color: #111;
   color: #fff;
   padding: 20px;
   animation: fadeInUp 1s ease;
+  border-top: 1px solid #FFFFFF;
 }
 
 @keyframes fadeInUp {
@@ -511,7 +546,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1344px;
   margin: 0 auto;
 }
 
@@ -526,12 +560,13 @@ ul {
 }
 
 .contact-button {
-  background-color: #007bff;
+  background-color: black;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
+  border: 1px solid #FFFFFF29;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
