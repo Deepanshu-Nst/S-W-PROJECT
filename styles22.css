@@ -141,14 +141,14 @@ ul {
 .projects .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 10px 10px;
   justify-items: center;
 }
 
 .projects .project-item {
   text-align: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   animation: zoomIn 1s ease;
 }
 
