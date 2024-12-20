@@ -58,6 +58,7 @@ ul {
 }
 
 .navbar .logo {
+  font-family: 'MuseoModerno';
   font-size: 24px;
   font-weight: bold;
   transition: transform 0.3s ease;
@@ -73,6 +74,7 @@ ul {
 
 .navbar nav ul li {
   margin: 0 15px;
+  font-family: 'MuseoModerno';
 }
 
 .navbar nav ul li a:hover {
