@@ -309,44 +309,6 @@ ul {
   background-color: #444;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .description-highlights,
-  .project-highlights,
-  .impact-metrics {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .description-container,
-  .highlights-title,
-  .highlights-content,
-  .metrics-title,
-  .metrics-content {
-    width: 100%;
-    text-align: center;
-  }
-
-  .highlights-content {
-    gap: 30px;
-  }
-
-  .metrics-content {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .highlight h3,
-  .metric h3 {
-    font-size: 1.5rem;
-  }
-
-  .highlight p,
-  .metric p {
-    font-size: 0.9rem;
-  }
-}
 
 
 /* Reviews Section */
@@ -499,27 +461,7 @@ ul {
   transform: scale(0.95);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
-}
 
-@media (max-width: 480px) {
-  .contact-header h2 {
-    font-size: 2rem;
-  }
-
-  .contact-header p {
-    font-size: 1rem;
-  }
-
-  .contact-form button {
-    font-size: 1rem;
-    padding: 10px;
-  }
-}
 
 
 
@@ -573,4 +515,144 @@ ul {
 .contact-button:hover {
   background-color: #0056b3;
   transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Navbar Adjustments */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hero Section Adjustments */
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  /* Projects Section Adjustments */
+  .projects .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects .project-item h3 {
+    font-size: 16px;
+  }
+
+  .projects .project-item p {
+    font-size: 14px;
+  }
+
+  /* Description Section Adjustments */
+  .description-highlights {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .description-container {
+    text-align: center;
+    max-width: 80%;
+  }
+
+  /* Project Highlights Section Adjustments */
+  .project-highlights {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .highlights-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Impact Metrics Section Adjustments */
+  .impact-metrics {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .metrics-content {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Section Adjustments */
+  .contact-form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .two input[type="text"] {
+    width: 100%;
+  }
+
+  /* Footer Adjustments */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left {
+    font-size: 0.9rem;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hero Section Font Size */
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  /* Project Item Adjustments */
+  .projects .project-item h3 {
+    font-size: 14px;
+  }
+
+  .projects .project-item p {
+    font-size: 12px;
+  }
+
+  /* Highlights Adjustments */
+  .highlight h3 {
+    font-size: 1.2rem;
+  }
+
+  .highlight p {
+    font-size: 0.9rem;
+  }
+
+  /* Contact Form Adjustments */
+  .contact-form button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+
+  .contact-header p {
+    font-size: 1rem;
+  }
+
+  /* Footer Adjustments */
+  .footer-left {
+    font-size: 0.8rem;
+  }
+
+  .contact-button {
+    font-size: 1rem;
+  }
 }
